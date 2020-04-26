@@ -529,7 +529,6 @@ input::-moz-focus-inner {
 form { margin-bottom: 24px; }
 fieldset { margin-bottom: 24px; }
 
-input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea,
@@ -553,7 +552,7 @@ select {
    width: 220px;
    } */
 
-input[type="text"]:focus,
+
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {

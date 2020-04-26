@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "javascript-terminal": "^1.0.3",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "2.1.1",

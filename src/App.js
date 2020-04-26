@@ -7,25 +7,14 @@ import Testimonials from  './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
-import Terminal  from 'terminal-in-react';
+import Terminal  from './components/TerminalComp';
 import {render} from "react-dom";
 const App = () =>  {
  
   const [showWebsite, setShowWebsite] = useState(false);
   let returnValue;
   if(showWebsite != true){
-    returnValue = (<div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "75px"
-      }}
-    >
-      <Terminal
-        commands={{'portfolio-start': () => setShowWebsite(true)}}
-      />
-    </div>)
+    returnValue = (<Terminal setState={() => setShowWebsite(true)}/>)
   } else {
     returnValue = (<div className="App">
         <Header resumeData={resumeData}/>
